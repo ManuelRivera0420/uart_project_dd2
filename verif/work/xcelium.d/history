@@ -1,0 +1,6 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(19Jan2026:19:18:48):( xrun -f list.f -l ./logs/comp.log +define+alfacen_noaxi_base_test+ -access +rwc -timescale 1ns/1ps -sv )&&(./xcelium.d/env.d/env.history.19Jan2026_19_18_48)
+s2::(19Jan2026:20:13:19):( xrun -f list.f -l ./logs/comp.log +define+alfacen_noaxi_base_test+ -access +rwc -timescale 1ns/1ps -sv )&&(./xcelium.d/env.d/env.history.19Jan2026_20_13_19)
