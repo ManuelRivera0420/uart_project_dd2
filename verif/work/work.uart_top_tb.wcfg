@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="work.uart_top_tb.wdb" id="1">
+         <top_modules>
+            <top_module name="std" />
+            <top_module name="uart_top_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="537.671667 us"></ZoomStartTime>
+      <ZoomEndTime time="3,311.671668 us"></ZoomEndTime>
+      <Cursor1Time time="2,040.815000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="116"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="19" />
+   <wvobject type="logic" fp_name="/uart_top_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/uart_top_tb/arst_n">
+      <obj_property name="ElementShortName">arst_n</obj_property>
+      <obj_property name="ObjectShortName">arst_n</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/uart_top_tb/baud_sel">
+      <obj_property name="ElementShortName">baud_sel[3:0]</obj_property>
+      <obj_property name="ObjectShortName">baud_sel[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/uart_top_tb/data_in">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/uart_top_tb/tx_start">
+      <obj_property name="ElementShortName">tx_start</obj_property>
+      <obj_property name="ObjectShortName">tx_start</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/uart_top_tb/tx_done">
+      <obj_property name="ElementShortName">tx_done</obj_property>
+      <obj_property name="ObjectShortName">tx_done</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/uart_top_tb/rx_done">
+      <obj_property name="ElementShortName">rx_done</obj_property>
+      <obj_property name="ObjectShortName">rx_done</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/uart_top_tb/data_out">
+      <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/uart_top_tb/BAUD_SEL_WIDTH">
+      <obj_property name="ElementShortName">BAUD_SEL_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BAUD_SEL_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/uart_top_tb/BYTE_WIDTH">
+      <obj_property name="ElementShortName">BYTE_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BYTE_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/uart_top_tb/uart_top_i/receiver_i/tick">
+      <obj_property name="ElementShortName">tick</obj_property>
+      <obj_property name="ObjectShortName">tick</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/uart_top_tb/uart_top_i/receiver_i/rx">
+      <obj_property name="ElementShortName">rx</obj_property>
+      <obj_property name="ObjectShortName">rx</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/uart_top_tb/uart_top_i/receiver_i/nbits">
+      <obj_property name="ElementShortName">nbits[4:0]</obj_property>
+      <obj_property name="ObjectShortName">nbits[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/uart_top_tb/uart_top_i/receiver_i/oversampling_count">
+      <obj_property name="ElementShortName">oversampling_count[4:0]</obj_property>
+      <obj_property name="ObjectShortName">oversampling_count[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/uart_top_tb/uart_top_i/receiver_i/state_reg">
+      <obj_property name="ElementShortName">state_reg[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state_reg[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/uart_top_tb/uart_top_i/receiver_i/state_next">
+      <obj_property name="ElementShortName">state_next[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state_next[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/uart_top_tb/uart_top_i/receiver_i/BYTE_WIDTH">
+      <obj_property name="ElementShortName">BYTE_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BYTE_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/uart_top_tb/uart_top_i/receiver_i/BIT_SAMPLING">
+      <obj_property name="ElementShortName">BIT_SAMPLING[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BIT_SAMPLING[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/uart_top_tb/uart_top_i/receiver_i/HALFBIT_SAMPLING">
+      <obj_property name="ElementShortName">HALFBIT_SAMPLING[31:0]</obj_property>
+      <obj_property name="ObjectShortName">HALFBIT_SAMPLING[31:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manuelrivera/git_repositories/uart_project_dd2/rtl/baud_rate_generator.sv" into library work
+INFO: [VRFC 10-311] analyzing module baud_rate_generator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manuelrivera/git_repositories/uart_project_dd2/rtl/receiver.sv" into library work
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manuelrivera/git_repositories/uart_project_dd2/rtl/transmitter.sv" into library work
+INFO: [VRFC 10-311] analyzing module transmitter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manuelrivera/git_repositories/uart_project_dd2/rtl/uart_top.sv" into library work
+INFO: [VRFC 10-311] analyzing module uart_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/manuelrivera/git_repositories/uart_project_dd2/verif/uart_top_tb.sv" into library work
+INFO: [VRFC 10-311] analyzing module uart_top_tb

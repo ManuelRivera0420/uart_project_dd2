@@ -20,12 +20,9 @@ output logic [BYTE_WIDTH - 1 : 0] data_out // OUPUT SIGNAL FOR THE BYTE RECEIVED
 localparam BIT_SAMPLING = 15;
 localparam HALFBIT_SAMPLING = 7;
 
-logic [4:0] nbits;
-logic [4:0] nbits_next;
-logic [4:0] oversampling_count;
-logic [4:0] oversampling_count_next;
-logic [BYTE_WIDTH - 1 : 0] data_out_reg;
-logic [BYTE_WIDTH - 1 : 0] data_out_reg_next;
+logic [4:0] nbits, nbits_next;
+logic [4:0] oversampling_count, oversampling_count_next;
+logic [BYTE_WIDTH - 1 : 0] data_out_reg, data_out_reg_next;
 logic rx_done_next;
 
 typedef enum logic [2:0] {IDLE = 3'b000, START = 3'b001, DATA = 3'b010, STOP = 3'b011} state_type;
@@ -49,13 +46,13 @@ always_comb begin
     nbits_next              = nbits;
     data_out_reg_next       = data_out_reg;
     state_next              = state_reg;
-    rx_done_next = 1'b0;
+    rx_done_next            = rx_done;
 
     case(state_reg)
         IDLE: begin
             rx_done_next = 1'b0;
             oversampling_count_next = '0;
-            data_out_reg_next       = data_out_reg;
+            data_out_reg_next       = '0;
             nbits_next              = '0;
             if (!rx) begin
                 data_out_reg_next = '0;
@@ -101,13 +98,11 @@ always_comb begin
             if (tick) begin
                 if (rx) begin
                     if (oversampling_count == BIT_SAMPLING) begin
+                        rx_done_next = 1'b1;
                         state_next = IDLE;
                         oversampling_count_next = '0;
                     end else begin
                         oversampling_count_next = oversampling_count + 1'b1;
-						if (oversampling_count == HALFBIT_SAMPLING) begin
-							rx_done_next = 1'b1;
-						end
                     end
                 end else begin
                     state_next = IDLE;
@@ -115,7 +110,9 @@ always_comb begin
                 end
             end
         end
-		
+	    default: begin
+		    state_next = state_reg;
+	    end		
     endcase
 end
 
