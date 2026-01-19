@@ -71,4 +71,9 @@ assert property (
   $rose(tx_start) |=>  (~uart_top_i.transmitter_i.tx)
 );
 
+initial begin
+    $shm_open("shm_db");
+    $shm_probe("ASMTR");
+end
+
 endmodule
