@@ -133,3 +133,4 @@ source waves.tcl
 ## run all
 $finish called at time : 20 ms : File "/home/manuelrivera/git_repositories/uart_project_dd2/verif/uart_top_tb.sv" Line 33
 xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 12876.965 ; gain = 429.875 ; free physical = 835 ; free virtual = 9935
+INFO: xsimkernel Simulation Memory Usage: 292356 KB (Peak: 340656 KB), Simulation CPU Usage: 4880 ms
