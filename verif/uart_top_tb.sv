@@ -29,6 +29,7 @@ logic [7:0] data_in_temp;
 logic [31:0] baud_counter_tb;
 logic tb_tick;
 
+// TODO
 always_ff @(posedge clk or negedge arst_n) begin
 	if(!arst_n) begin
 		tb_tick <= 1'b0;
@@ -60,6 +61,8 @@ uart_top uart_top_i(
 .data_out(intf.data_out)
 );
 
+// when rx_done is set to 1, the data_out must be equal to data_in from the
+// transmitter at state START
 assert property(
     @(posedge clk)
     disable iff(!arst_n)
@@ -73,6 +76,8 @@ assert property (
   $rose(intf.tx_start) |-> ##[100000:115000] ($rose(intf.tx_done) && (intf.data_out == data_in_temp))
 );
 
+// if a data transmission started, the tx must be zero after the next posedge
+	// clk (start bit)
 assert property (
   @(posedge clk) 
   disable iff(!arst_n)
