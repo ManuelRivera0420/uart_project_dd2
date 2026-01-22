@@ -1,3 +1,3 @@
 UART
 
-![Texto alternativo](documentation/uart_uA (1).png)
+![Texto alternativo](documentation/uart_ua (1).png)
