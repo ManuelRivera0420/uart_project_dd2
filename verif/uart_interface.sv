@@ -30,8 +30,8 @@ modport user_tile_modport(
 
 // task to write data from the transmitter into the receiver
 task write_data_in(logic [BYTE_WIDTH - 1 : 0] data);
-	@(posedge clk);
-	data_in <= data;
+    @(posedge clk);
+    data_in <= data;
     @(posedge clk);
     tx_start <= 1'b1;
     @(posedge clk);

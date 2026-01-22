@@ -27,13 +27,17 @@ end
 localparam BAUD_CNT_CYCLES = ((100_000_000) / (9600 * 16));
 logic [7:0] data_in_temp;
 logic [31:0] baud_counter_tb;
+logic tb_tick;
 
 always_ff @(posedge clk or negedge arst_n) begin
 	if(!arst_n) begin
+		tb_tick <= 1'b0;
 		baud_counter_tb <= '0;
 	end else if (baud_counter_tb == BAUD_CNT_CYCLES) begin
+		tb_tick <= 1'b1;
 		baud_counter_tb <= baud_counter_tb <= '0;
 	end else begin
+		tb_tick <= 1'b0;
 		baud_counter_tb <= baud_counter_tb + 1'b1;
 	end
 end
@@ -62,6 +66,7 @@ assert property(
    intf.rx_done |-> (intf.data_out == data_in_temp)
 );
 
+// to check //
 assert property (
   @(posedge clk) 
   disable iff(!arst_n)
