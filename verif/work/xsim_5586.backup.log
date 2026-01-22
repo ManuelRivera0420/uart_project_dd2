@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Jan 22 08:49:03 2026
+# Process ID         : 5586
+# Current directory  : /home/manuelrivera/git_repositories/uart_project_dd2/verif/work
+# Command line       : xsim -mode tcl -source {xsim.dir/work.uart_top_tb/xsim_script.tcl}
+# Log file           : /home/manuelrivera/git_repositories/uart_project_dd2/verif/work/xsim.log
+# Journal file       : /home/manuelrivera/git_repositories/uart_project_dd2/verif/work/xsim.jou
+# Running On         : lap
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.3 LTS
+# Processor Detail   : Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz
+# CPU Frequency      : 3901.412 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8125 MB
+# Swap memory        : 8000 MB
+# Total Virtual      : 16125 MB
+# Available Virtual  : 14083 MB
+#-----------------------------------------------------------
+source xsim.dir/work.uart_top_tb/xsim_script.tcl
+# xsim {work.uart_top_tb} -autoloadwcfg -runall
+Time resolution is 1 ps
+open_wave_config /home/manuelrivera/git_repositories/uart_project_dd2/verif/work/work.uart_top_tb.wcfg
+WARNING: Simulation object /uart_top_tb/baud_sel was not found in the design.
+WARNING: Simulation object /uart_top_tb/data_in was not found in the design.
+WARNING: Simulation object /uart_top_tb/tx_start was not found in the design.
+WARNING: Simulation object /uart_top_tb/tx_done was not found in the design.
+WARNING: Simulation object /uart_top_tb/rx_done was not found in the design.
+WARNING: Simulation object /uart_top_tb/data_out was not found in the design.
+WARNING: Simulation object /uart_top_tb/BAUD_SEL_WIDTH was not found in the design.
+run -all
+$finish called at time : 20 ms : File "/home/manuelrivera/git_repositories/uart_project_dd2/verif/uart_top_tb.sv" Line 24
+exit
+INFO: xsimkernel Simulation Memory Usage: 292364 KB (Peak: 340664 KB), Simulation CPU Usage: 5270 ms
+INFO: [Common 17-206] Exiting xsim at Thu Jan 22 08:49:11 2026...

@@ -5,5 +5,6 @@ Nov 14 2025
 /home/manuelrivera/git_repositories/uart_project_dd2/rtl/baud_rate_generator.sv,1768764436,systemVerilog,,/home/manuelrivera/git_repositories/uart_project_dd2/rtl/receiver.sv,,baud_rate_generator,,uvm,,,,,,
 /home/manuelrivera/git_repositories/uart_project_dd2/rtl/receiver.sv,1768772342,systemVerilog,,/home/manuelrivera/git_repositories/uart_project_dd2/rtl/transmitter.sv,,receiver,,uvm,,,,,,
 /home/manuelrivera/git_repositories/uart_project_dd2/rtl/transmitter.sv,1768766641,systemVerilog,,/home/manuelrivera/git_repositories/uart_project_dd2/rtl/uart_top.sv,,transmitter,,uvm,,,,,,
-/home/manuelrivera/git_repositories/uart_project_dd2/rtl/uart_top.sv,1768771229,systemVerilog,,/home/manuelrivera/git_repositories/uart_project_dd2/verif/uart_top_tb.sv,,uart_top,,uvm,,,,,,
-/home/manuelrivera/git_repositories/uart_project_dd2/verif/uart_top_tb.sv,1768774514,systemVerilog,,,,uart_top_tb,,uvm,,,,,,
+/home/manuelrivera/git_repositories/uart_project_dd2/rtl/uart_top.sv,1768787315,systemVerilog,,/home/manuelrivera/git_repositories/uart_project_dd2/verif/uart_interface.sv,,uart_top,,uvm,,,,,,
+/home/manuelrivera/git_repositories/uart_project_dd2/verif/uart_interface.sv,1769092576,systemVerilog,,/home/manuelrivera/git_repositories/uart_project_dd2/verif/uart_top_tb.sv,,uart_interface,,uvm,,,,,,
+/home/manuelrivera/git_repositories/uart_project_dd2/verif/uart_top_tb.sv,1769092968,systemVerilog,,,,uart_top_tb,,uvm,,,,,,

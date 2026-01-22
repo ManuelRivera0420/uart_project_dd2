@@ -5,4 +5,5 @@
 	../../rtl/uart_top.sv
 
 # ============================ verification
+        ../uart_interface.sv
 	../uart_top_tb.sv

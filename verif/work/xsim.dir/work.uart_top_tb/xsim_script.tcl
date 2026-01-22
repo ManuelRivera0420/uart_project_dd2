@@ -1,4 +1,1 @@
-set_param project.enableReportConfiguration 0
-load_feature core
-current_fileset
-xsim {work.uart_top_tb} -autoloadwcfg -tclbatch {waves.tcl}
+xsim {work.uart_top_tb} -autoloadwcfg -runall
